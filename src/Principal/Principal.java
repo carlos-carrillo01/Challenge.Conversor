@@ -41,6 +41,7 @@ public class Principal {
                 System.out.println("Gracias por usar el conversor de monedas. ¡Hasta luego!");
                 return;
             }
+            
 
             String m1 = datosMonedas.RegresaMoneda(opcMoneda);
 
@@ -71,6 +72,7 @@ public class Principal {
             }
         }
     }
+    
 
     private static int obtenerOpcionUsuario(Scanner scanner, int maxOpciones) {
         int opcion = -1;
@@ -88,6 +90,7 @@ public class Principal {
         }
         return opcion;
     }
+    
 
     private static int obtenerValorConvertir(Scanner scanner) {
         int valor = -1;
