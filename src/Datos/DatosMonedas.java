@@ -1,6 +1,7 @@
 package Datos;
 
 public class DatosMonedas {
+    
     public String[] nombresPaises = new String[]{
             "Peso argentino (ARS)",
             "Boliviano boliviano (BOB)",
@@ -10,7 +11,9 @@ public class DatosMonedas {
             "Dólar estadounidense (USD)",
             "Peso mexicano (MXN)"
     };
+    
     String[] codigosMonedas = new String[]{"ARS", "BOB", "BRL", "CLP", "COP", "USD", "MXN"};
+    
 
     public DatosMonedas() {
     }
@@ -22,9 +25,12 @@ public class DatosMonedas {
             System.out.println((i + 1) + ". " + this.nombresPaises[i]);
         }
     }
+    
 
     public String RegresaMoneda(int opc) {
+        
         String aux;
+        
         switch (opc) {
             case 1:
                 aux = codigosMonedas[0];
